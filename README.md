@@ -13,25 +13,24 @@ KBO 프로야구 타자 연봉 예측
 ## Data
 [statiz](http://www.statiz.co.kr/main.php)의 데이터 사용
 
-#### train
+**train** 
     시즌 2010 ~ 2017 데이터
 
-#### test
+**test**
     시즌 2018 데이터
 
 ## Procedure
 <img width="650" alt="lr1" src="https://user-images.githubusercontent.com/57264003/87558203-cbfe1380-c6f3-11ea-90b1-3605180511f3.png">
 
-#### 모델1
-    야구선수기록에 시즌, 나이를 카테고리화 하여 나누고, 변수들에 scaling 하여 분석
+**모델1**   야구선수기록에 시즌, 나이를 카테고리화 하여 나누고, 변수들에 scaling 하여 분석
 
-#### 모델2
+**모델2**
     종속변수인 '연봉'에 로그를 취하여 분석
 
-#### 모델3
-    추가하여 분석
+**모델3**
+   수상 지표, 시즌별 팀순위, 용병 여부 추가하여 분석
 
-#### 모델4
+**모델4**
     FA계약 데이터 추가, 연봉의 현재 가치 반영하여 분석
 
 ## Result
@@ -40,5 +39,6 @@ KBO 프로야구 타자 연봉 예측
 <img width="1018" alt="스크린샷 2020-07-12 오후 5 03 19" src="https://user-images.githubusercontent.com/57264003/87558458-18e1ea00-c6f4-11ea-97ce-fda641ee68a6.png">
 
 
-$R^2$  **0.868** 
-$ MSE$  **0.13** 
+> | **R-squared** | **0.868** |
+> |--|--|
+> | **MSE** | **0.13** |
